@@ -1,4 +1,55 @@
 @media screen and (max-width: 1024px) {
+    header {
+        padding: 34px 0;
+
+        >.container {
+            gap: 0;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 97px;
+            background-color: #121517;
+            z-index: 1;
+        }
+    }
+
+
+
+    .container {
+        padding: 0 25px;
+    }
+
+    .header-logo {
+        max-width: 114px;
+    }
+
+    .mobile-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: #0B0C0D;
+        padding: 25px 25px 75px;
+        background-image: linear-gradient(245deg, rgba(35, 114, 73, 0.55) 0%, rgba(53, 198, 107, 0.60) 51.85%);
+        backdrop-filter: blur(3px);
+        transition: .3s;
+        visibility: hidden;
+        transform: translate(0, -100%);
+       &.show{
+        top: 97px;
+        display: block;
+        transform: translate(0, 0);
+        visibility: visible;
+       }
+    }
+
+    .menu_list {
+        flex-direction: column;
+        gap: 48px;
+    }
+
 }
-
-
