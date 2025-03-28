@@ -26,7 +26,7 @@
         position: relative;
 
         &:before {
-            @include footer-light;
+            @include template-light;
             width: 371px;
             height: 260px;
             background-image: url(./assets/img/decoration__footer-light-lg.png);
@@ -69,7 +69,7 @@
         }
 
         &:before {
-            @include footer-light;
+            @include template-light;
             width: 1250px;
             height: 906px;
             background-image: url(./assets/img/decoration__footer-light-lg.png);
@@ -113,7 +113,7 @@
             position: relative;
 
             &:before {
-                @include footer-light;
+                @include template-light;
                 width: 371px;
                 height: 260px;
                 background-image: url(./assets/img/decoration__footer-light-md.png);
