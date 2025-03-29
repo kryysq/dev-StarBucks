@@ -6,10 +6,12 @@ header {
         display: flex;
         align-items: center;
         gap: 94px;
+       
     }
 
     .btn-burger {
         margin-left: auto;
+        padding: 10px 24px;
     }
 }
 
@@ -37,6 +39,7 @@ header {
     width: 42px;
     height: 18px;
     position: relative;
+    padding: 12px 24px;
 
     span {
         position: absolute;
