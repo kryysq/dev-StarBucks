@@ -18,14 +18,16 @@
         }
     }
 
-
-
-    .container {
-        padding: 0 25px;
+    section{
+        margin-bottom: $section-mobile-margin;
     }
 
     .header-logo {
         max-width: 114px;
+    }
+
+    .container {
+        padding: 0 25px;
     }
 
     .mobile-container {
@@ -69,20 +71,28 @@
         }
     }
 
+
+    .template-title {
+        font-size: min(12vw, 48px);
+    }
+
+    .template-description {
+        font-size: 0.75rem;
+    }
+
     .banner {
+        
         .container {
             flex-direction: column-reverse;
             align-items: center;
         }
 
-        h1 {
-            font-size: min(12vw, 48px);
+        .template-title {
             margin-bottom: 36px;
         }
 
-        .banner-description {
+        .template-description {
             margin-bottom: 36px;
-            font-size: 0.75rem;
         }
 
         &-btn-group {
@@ -132,9 +142,6 @@
         font-size: 24px;
     }
 
-    .advantage{
-        margin-bottom: 68px;
-    }
     .advantages-row {
         flex-direction: column;
         max-width: 218px;

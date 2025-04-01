@@ -1,5 +1,4 @@
 .banner {
-    margin-bottom: 100px;
     position: relative;
 
     .container {
@@ -12,14 +11,11 @@
     }
 
     &-content {
-        max-width: 574px;
+        max-width: 580px;
     }
 
-    h1 {
-        font-size: min(6vw, 80px);
-        font-weight: 800;
+    .template-title {
         margin-bottom: 54px;
-        position: relative;
 
         &::before {
             @include template-light;
@@ -31,12 +27,8 @@
             transform: none;
         }
     }
-
-    &-description {
-        @extend h6;
-        color: $text;
-        font-weight: 400;
-        margin-bottom: 54px;
+    .template-description{
+        max-width: 580px;
     }
 
     &-btn-group {
