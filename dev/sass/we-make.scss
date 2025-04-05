@@ -11,12 +11,12 @@
         position: relative;
 
         img {
-            @include clip-left;
+            @include clip-top-left;
         }
 
         &::before {
             content: "";
-            @include clip-left;
+            @include clip-top-left;
             background-color: $primary-color;
             top: 36px;
             right: 49px;
@@ -31,6 +31,15 @@
         max-width: 470px;
         width: 100%;
     }
+}
+
+.we-make__process {
+    background: url(./assets/img/we-make___cooking.png) center / cover no-repeat;
+    min-height: 275px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include clip-bottom-right 
 }
 
 .we-make__line {

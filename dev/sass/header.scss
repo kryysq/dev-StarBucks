@@ -3,9 +3,10 @@ header {
     position: relative;
 
     >.container {
+        --gap: 94px;
         display: flex;
         align-items: center;
-        gap: 94px;
+        gap: var( --gap);
        
     }
 
@@ -19,10 +20,23 @@ header {
     z-index: 1;
 }
 
+.mobile-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: var( --gap);
+    z-index: 2;
+
+    .btn{
+        margin-left: auto;
+    }
+
+}
+
 .menu {
     &_list {
         display: flex;
-        gap: 94px;
+        gap: var( --gap);
     }
 
     &_link {

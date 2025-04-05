@@ -18,7 +18,7 @@ body {
     overflow-x: hidden;
 }
 
-section{
+section {
     margin-bottom: $section-margin;
 }
 
@@ -62,10 +62,12 @@ h6 {
     line-height: 1.63;
     font-size: 1.25rem;
 }
-.template-title{
+
+.template-title {
     font-size: min(6vw, 80px);
     font-weight: 800;
     position: relative;
+    letter-spacing: -0.03em;
 }
 
 .template-description {
@@ -74,6 +76,7 @@ h6 {
     font-weight: 400;
     margin-bottom: 54px;
     max-width: 480px;
+    letter-spacing: -0.02em;
 }
 
 img {
@@ -87,6 +90,10 @@ a {
     }
 }
 
+button {
+    cursor: pointer;
+}
+
 .btn {
     color: $title-color;
     font-size: 24px;
@@ -95,10 +102,12 @@ a {
     text-decoration: none;
     padding: 23px 54px;
     background: transparent;
-    display: inline-block;
     text-align: center;
     transition: .3s;
     position: relative;
+    display: inline-flex;
+    align-items: center;
+    
 
     &::after {
         @include template-light;
@@ -116,6 +125,12 @@ a {
             width: 500%;
             height: 500%;
         }
+    }
+
+    svg {
+        --size: 28px;
+        height: var(--size);
+        width: var(--size);
     }
 
     &.btn-primary {
@@ -199,6 +214,7 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 12px;
 
         svg {
             width: 12px;
@@ -279,6 +295,44 @@ a {
         color: #292C2E;
     }
 }
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.g-0 {
+    gap: 0;
+}
+
+.g-1 {
+    gap: 1rem;
+
+}
+
+.g-2 {
+    gap: 2rem;
+
+}
+
+.g-3 {
+    gap: 3rem;
+
+}
+
+.g-4 {
+    gap: 4rem;
+
+}
+
+.g-5 {
+    gap: 5rem;
+
+}
+
+.bg-test{
+    background: none red!important;
+}
+
 
 ::selection {
     color: $bg-color;

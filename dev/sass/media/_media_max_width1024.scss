@@ -42,12 +42,16 @@
         transition: .3s;
         visibility: hidden;
         transform: translate(0, -100%);
+        flex-direction: column;
 
         &.show {
-            top: 97px;
-            display: block;
+            top: 60px;
             transform: translate(0, 0);
             visibility: visible;
+        }
+
+        .btn{
+            margin-left: initial;
         }
     }
 

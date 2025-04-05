@@ -25,7 +25,15 @@ $section-mobile-margin: 64px;
     background: center/contain no-repeat;
 }
 
-@mixin clip-left {
-    -webkit-mask: url(./assets/img/we-make___clip-left.svg);
-    mask: url(./assets/img/we-make___clip-left.svg);
+@mixin clip-top-left {
+    -webkit-mask: url(./assets/img/we-make___clip-top-left.svg);
+    -o-mask: url(./assets/img/we-make___clip-top-left.svg);
+    -moz-mask:url(./assets/img/we-make___clip-top-left.svg);
+    mask: url(./assets/img/we-make___clip-top-left.svg);
+ }
+ @mixin clip-bottom-right {
+    -webkit-mask: url(./assets/img/we-make___clip-bottom-right.svg);
+    -o-mask: url(./assets/img/we-make___clip-bottom-right.svg);
+    -moz-mask:url(./assets/img/we-make___clip-bottom-right.svg);
+    mask: url(./assets/img/we-make___clip-bottom-right.svg);
  }
