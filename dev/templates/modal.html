@@ -1,8 +1,31 @@
-<div id="process" class="modal">
+<div id="process" class="modal video-provecess">
     <button class="btn" data-modal-close>x</button>
     <div class="modal-content">
         <h2>process</h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aperiam expedita obcaecati?
+        <video id="video" src="./assets/img/videoplayback.mp4"></video>
+        <div class="d-flex g-3">
+            <button id="play" class="btn btn-primary">
+                <svg>
+                    <use href="#icon-triangle"></use>
+                </svg>
+            </button>
+            <button id="pause" class="btn btn-primary">
+                <svg>
+                    <use href="#icon-pause"></use>
+                </svg>
+            </button> 
+            <button id="stop" class="btn btn-primary">
+                <svg>
+                    <use href="#icon-stop"></use>
+                </svg>
+            </button>
+           
+
+            <h3 id="beginning">Beginning</h3>
+            <h3 id="middle">Middle</h3>
+            <h3 id="end">End</h3>
+
+        </div>
     </div>
     <button class="btn btn-secondary" data-modal-close>close</button>
 </div>
