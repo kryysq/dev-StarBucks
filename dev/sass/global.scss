@@ -17,6 +17,9 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
 }
+main{
+    overflow-x: hidden;
+}
 
 section {
     margin-bottom: $section-margin;
@@ -335,12 +338,6 @@ button {
 .g-5 {
     gap: 5rem;
 
-}
-
-element.style {
-    position: absolute;
-    top: 0;
-    right: 0;
 }
 
 ::selection {
