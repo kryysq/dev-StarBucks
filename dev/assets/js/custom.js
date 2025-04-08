@@ -112,3 +112,16 @@ modalTrigers.forEach((item) => {
 modalClose.forEach(close => {
     close.addEventListener('click', closeModal)
 })
+
+const swiper = new Swiper('.swiper', {
+    spaceBetween: 48,
+   slidesPerView: 4,
+    loop: true,
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+ 
+  });
