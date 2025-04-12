@@ -14,6 +14,12 @@ $title-color: #fff;
 $section-margin: 100px;
 $section-mobile-margin: 64px;
 
+@mixin transform-centered{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
 @mixin template-light {
     content: "";
@@ -26,14 +32,15 @@ $section-mobile-margin: 64px;
 }
 
 @mixin clip-top-left {
-    -webkit-mask: url(./assets/img/we-make___clip-top-left.svg);
-    -o-mask: url(./assets/img/we-make___clip-top-left.svg);
-    -moz-mask:url(./assets/img/we-make___clip-top-left.svg);
-    mask: url(./assets/img/we-make___clip-top-left.svg);
- }
- @mixin clip-bottom-right {
-    -webkit-mask: url(./assets/img/we-make___clip-bottom-right.svg);
-    -o-mask: url(./assets/img/we-make___clip-bottom-right.svg);
-    -moz-mask:url(./assets/img/we-make___clip-bottom-right.svg);
-    mask: url(./assets/img/we-make___clip-bottom-right.svg);
- }
+    -webkit-mask: url(./assets/img/we-make___clip-top-left.svg) no-repeat;
+    -o-mask: url(./assets/img/we-make___clip-top-left.svg)no-repeat;
+    -moz-mask: url(./assets/img/we-make___clip-top-left.svg)no-repeat;
+    mask: url(./assets/img/we-make___clip-top-left.svg)no-repeat;
+}
+
+@mixin clip-bottom-right {
+    -webkit-mask: url(./assets/img/we-make___clip-bottom-right.svg)no-repeat;
+    -o-mask: url(./assets/img/we-make___clip-bottom-right.svg)no-repeat;
+    -moz-mask: url(./assets/img/we-make___clip-bottom-right.svg)no-repeat;
+    mask: url(./assets/img/we-make___clip-bottom-right.svg)no-repeat;
+}

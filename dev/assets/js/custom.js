@@ -1,4 +1,3 @@
-
 const burger = document.querySelector('#btn-burger');
 const mobileContainer = document.querySelector('#mobile-container');
 const processVideo = document.querySelector('#video');
@@ -114,14 +113,31 @@ modalClose.forEach(close => {
 })
 
 const swiper = new Swiper('.swiper', {
-    spaceBetween: 48,
-   slidesPerView: 4,
+    spaceBetween: 24,
+    slidesPerView: 1,
     loop: true,
-  
+
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
- 
-  });
+
+    breakpoints: {
+        768: {
+            slidesPerView: 2
+        },
+        1025: {
+            slidesPerView: 2,
+            spaceBetween: 48
+        },
+        1233: {
+            slidesPerView: 3,
+            spaceBetween: 48,
+        },
+        1560: {
+            slidesPerView: 4,
+            spaceBetween: 48,
+        }
+    }
+});
