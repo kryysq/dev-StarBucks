@@ -30,6 +30,16 @@
     &__content-box {
         max-width: 470px;
         width: 100%;
+        &::before{
+            content: "";
+            background: url(./assets/img/decoration__banner-light-title.png);
+            position: absolute;
+            top: -220px;
+            right: -202px;
+            width: 615px;
+            height: 581px;
+            
+        }
     }
 }
 
@@ -44,9 +54,10 @@
 
 .we-make__line {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: -116px;
+    bottom: -472px;
     width: 993px;
     height: 999px;
-    display: none;
+    z-index: -1;
 }
+

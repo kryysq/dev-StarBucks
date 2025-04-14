@@ -1,3 +1,6 @@
+.events .container{
+    position: relative;
+}
 .events-title-wrapper {
     @extend .products-title-wrapper;
     flex-direction: row-reverse;
@@ -8,47 +11,47 @@
     }
 }
 
-.events-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-}
-
-.event {
+.event-item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    padding: 44px 26px 26px;
-    border-radius: 30px;
     height: 260px;
+    width: 100%;
+    border-radius: 30px;
+    padding: 44px 24px 24px;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
 
     &-title {
         line-height: 1;
     }
 }
 
-.event-1 {
+.event-area-1 {
     grid-area: 1 / 1 / 4 / 7;
 }
 
-.event-2 {
+.event-area-2 {
     grid-area: 1 / 7 / 4 / 13;
 }
 
-.event-3 {
+.event-area-3 {
     grid-area: 4 / 1 / 7 / 5;
 }
 
-.event-4 {
+.event-area-4 {
     grid-area: 4 / 5 / 7 / 9;
 }
 
-.event-5 {
+.event-area-5 {
     grid-area: 4 / 9 / 7 / 13;
+}
+
+.swiper-events-button-prev{
+    @extend .swiper-button-prev;
+}
+.swiper-events-button-next{
+    @extend .swiper-button-next;
 }
